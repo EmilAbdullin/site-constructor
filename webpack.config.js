@@ -16,5 +16,13 @@ module.exports = {
             template:'./src/index.html',
             title:'Constructor Site Javascript'
         })
-    ]
+    ],
+    module: {
+        rules: [
+          {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+          },
+        ],
+    },
 }

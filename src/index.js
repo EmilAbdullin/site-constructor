@@ -1,2 +1,1 @@
-import './module'
-console.log('index');
+import './styles/main.css'

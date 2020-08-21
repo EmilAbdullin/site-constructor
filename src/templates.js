@@ -16,8 +16,15 @@ function textColumns(block){
     return row(html.join(''), styles)
 }
 
+function image(block){
+    const { alt, styles, imageStyles } = block.options
+    const html = `<img src="${block.value}" alt="${alt}" style="${imageStyles}">`
+    return row(col(html), styles);
+}
+
 export const templates = {
     title,
     text,
-    textColumns
+    textColumns,
+    image
 }
